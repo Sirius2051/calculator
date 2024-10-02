@@ -6,9 +6,8 @@
 }
 body {
     background: rgb(19,0,36);
-    background: linear-gradient(45deg, rgba(19,0,36,1) 0%, rgba(227,0,50,1) 44%, rgba(34,0,255,1) 100%);
+    background: linear-gradient(45deg, rgba(19,0,36,1) 0%, rgb(243, 76, 112) 44%, rgba(34,0,255,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    background: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images-1536x1024.jpg');
 }
