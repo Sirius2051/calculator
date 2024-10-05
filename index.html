@@ -8,55 +8,128 @@
     <link rel="stylesheet" href="assets/css/styles.css" >
 </head>
 <body>
-    <div class="d-flex flex-column h-100 align-items-center justify-content-center">
-        <h1 class="text-center my-5 display-1 text-white">Calculadora</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-7 card p-5 m-auto">
-                    <div class="row">
-                        <div class="col-12">
-                            <textarea class="form-control m-2" id="screen" disabled ></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="row">
-                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="9">9</button></div>
-                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="8">8</button></div>
-                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="7">7</button></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="6">6</button></div>
-                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="5">5</button></div>
-                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="4">4</button></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="3">3</button></div>
-                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="2">2</button></div>
-                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="1">1</button></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="0">0</button></div>
-                            
+    <div class="filter"></div>
+    <div class="filter2"></div>
+    <div class="row h-100 ">
+        <div class="d-flex flex-column h-100 w-75 align-items-center justify-content-center">
+            <!-- <h1 class="text-center my-5 display-1 text-white">Calculadora</h1> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 card p-5 m-auto">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <textarea class="form-control m-2" id="screen" disabled ></textarea>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="row">
-                                <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="+">+</button></div>
-                                <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="-">-</button></div>
-                                <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="*">*</button></div>
-                                <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="/">/</button></div>
-                                <div class="col-12"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="**">^</button></div>
-                                <div class="col-6"><button class="btn btn-primary col-12 m-2" id="result">=</button></div>
-                                <div class="col-6"><button class="btn btn-warning col-12 m-2" id="clean">C</button></div>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="9">9</button></div>
+                                    <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="8">8</button></div>
+                                    <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="7">7</button></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="6">6</button></div>
+                                    <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="5">5</button></div>
+                                    <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="4">4</button></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="3">3</button></div>
+                                    <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="2">2</button></div>
+                                    <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="1">1</button></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="0">0</button></div>
+                                
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="+">+</button></div>
+                                    <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="-">-</button></div>
+                                    <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="*">*</button></div>
+                                    <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="/">/</button></div>
+                                    <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="**">^</button></div>
+                                    <div class="col-6"><button class="btn btn-secondary col-12 m-2" onclick="addKey(this.value)" value=".">.</button></div>
+                                    <div class="col-6"><button class="btn btn-primary col-12 m-2" id="result">=</button></div>
+                                    <div class="col-6"><button class="btn btn-warning col-12 m-2 text-white" id="clean">C</button></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-3"><button class="btn btn-warning col-12 m-2" id="_pi">PI</button></div>
+                                    <div class="col-3"><button class="btn btn-warning col-12 m-2" id="_e">E</button></div>
+                                    <div class="col-3"><button class="btn btn-warning col-12 m-2" id="_LN10">LN10</button></div>
+                                    <div class="col-3"><button class="btn btn-warning col-12 m-2" id="_LN2">LN2</button></div>
+                                    <div class="col-3"><button class="btn btn-warning col-12 m-2" id="_LOG10E">LOG10E</button></div>
+                                    <div class="col-3"><button class="btn btn-warning col-12 m-2" id="_LOG2E">LOG2E</button></div>
+                                    <div class="col-3"><button class="btn btn-warning col-12 m-2" id="_SQRT1_2">SQRT1_2</button></div>
+                                    <div class="col-3"><button class="btn btn-warning col-12 m-2" id="_SQRT2">SQRT2</button></div>
+
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_abs">ABS</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_acos">ACOS</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_acosh">ACOSH</button></div>
+                                    
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_asin">ASIN</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_asinh">ASINH</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_atan">ATAN</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_atan2">ATAN2</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_atanh">ATANH</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_cbrt">CBRT</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_ceil">CEIL</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_clz32">CLZ32</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_cos">COS</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_cosh">COSH</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_exp">EXP</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_expm1">EXPM1</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_floor">FLOOR</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_f16round">F16ROUND</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_fround">FROUND</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_hypot">HYPOT</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_imul">IMUL</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_log">LOG</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_log10">LOG10</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_log1p">LOG1P</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_log2">LOG2</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_max">MAX</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_min">MIN</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_pow">POW</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_random">RANDOM</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_round">ROUND</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_sign">SIGN</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_sin">SIN</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_sinh">SINH</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_sqrt">SQRT</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_tan">TAN</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_tanh">TANH</button></div>
+                                    <div class="col-2"><button class="btn btn-info col-12 m-2" id="_trunc">TRUNC</button></div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="d-flex flex-column h-100 w-25 align-items-center justify-content-center">
+            <div class="card py-4 px-5  ">
+                <table class="table text-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Operation</th>
+                        <th scope="col">Result</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+                      
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
-    
     <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -1,20 +1,78 @@
+* {
+    max-width: 100vw;
+}
 .card {
     border-radius: 20px !important;
-    box-shadow: 0 0 75px rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(7.5px);
-    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 20px rgba(20, 20, 20, 0.8)  ;
+    /* backdrop-filter: blur(5px); */
+    background-color: rgba(200, 200, 200, 0.75);
+    max-height: 100vh;
+    overflow-y: scroll;
 }
 body {
     height: 100vh;
-    --s: 156px;
-    --c1: #49407D;
-    --c2: #B6B1D2;
-    --_g: #0000 52%,var(--c1) 54% 57%,#0000 59%; 
-    background: 
-        radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
-        radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
-        radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
-        radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
-        var(--c2);
-    background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+    background-color: #B6B1D2;
+    opacity: 1;
+    background-image:  linear-gradient(#49407D 2px, transparent 2px), linear-gradient(90deg, #49407D 2px, transparent 2px), linear-gradient(#49407D 1px, transparent 1px), linear-gradient(90deg, #49407D 1px, #B6B1D2 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+#screen {
+    border-radius: 20px !important;
+    box-shadow: 0 0 75px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7.5px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.btn-success {
+    background-color: #19875455;
+    
+}
+.btn-danger {
+    background-color: #DC354555;
+    
+}
+.btn-primary {
+    background-color: #0D6EFD55;
+    
+}
+.btn-warning {
+    background-color: #FFC10755;
+    
+}
+.btn-info {
+    background-color: #31D2F255;
+    color: #fff;
+}
+.btn-secondary {
+    background-color: #6C757D55;
+    color: #fff;
+}
+.filter  {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0) 49%, rgba(51,33,28,1) 100%);
+}
+.filter2  {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(51,33,28);
+    background: radial-gradient(circle, rgba(51,33,28,1) 0%, rgba(255,255,255,0) 30%);
+}
+button {
+    font-weight: 900 !important;
+    border-radius: 20px !important;
+}
+.display-1 {
+    font-weight: 900;
+    text-shadow: 0 0 20px rgba(20, 20, 20, 0.8);
+}
+tr {
+    cursor: pointer;
 }
