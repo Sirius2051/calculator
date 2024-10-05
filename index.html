@@ -8,46 +8,48 @@
     <link rel="stylesheet" href="assets/css/styles.css" >
 </head>
 <body>
-    <h1 class="text-center my-5 display-1 text-white">Calculadora</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-7 card p-5 m-auto">
-                <div class="row">
-                    <div class="col-12">
-                        <textarea class="form-control m-2" id="screen" disabled ></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="row">
-                            <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="9">9</button></div>
-                            <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="8">8</button></div>
-                            <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="7">7</button></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="6">6</button></div>
-                            <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="5">5</button></div>
-                            <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="4">4</button></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="3">3</button></div>
-                            <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="2">2</button></div>
-                            <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="1">1</button></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="0">0</button></div>
-                        
+    <div class="d-flex flex-column h-100 align-items-center justify-content-center">
+        <h1 class="text-center my-5 display-1 text-white">Calculadora</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-7 card p-5 m-auto">
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea class="form-control m-2" id="screen" disabled ></textarea>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="+">+</button></div>
-                            <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="-">-</button></div>
-                            <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="*">*</button></div>
-                            <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="/">/</button></div>
-                            <div class="col-12"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="**">^</button></div>
-                            <div class="col-6"><button class="btn btn-primary col-12 m-2" id="result">=</button></div>
-                            <div class="col-6"><button class="btn btn-warning col-12 m-2" id="clean">C</button></div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="9">9</button></div>
+                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="8">8</button></div>
+                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="7">7</button></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="6">6</button></div>
+                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="5">5</button></div>
+                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="4">4</button></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="3">3</button></div>
+                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="2">2</button></div>
+                                <div class="col-4"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="1">1</button></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12"><button class="btn btn-success col-12 m-2" onclick="addKey(this.value)" value="0">0</button></div>
+                            
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="+">+</button></div>
+                                <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="-">-</button></div>
+                                <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="*">*</button></div>
+                                <div class="col-6"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="/">/</button></div>
+                                <div class="col-12"><button class="btn btn-danger col-12 m-2" onclick="addKey(this.value)" value="**">^</button></div>
+                                <div class="col-6"><button class="btn btn-primary col-12 m-2" id="result">=</button></div>
+                                <div class="col-6"><button class="btn btn-warning col-12 m-2" id="clean">C</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
